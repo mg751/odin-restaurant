@@ -1,1 +1,1 @@
-console.log("Hello!"),console.log("meow");
+(()=>{"use strict";document.querySelector("#content"),window.addEventListener("load",(e=>{!function(){let e=document.createElement("h1"),t=document.createElement("img"),n=document.createElement("p"),i=[e,t,n];e.innerText="My stupid restaurant",t.src="http://unsplash.it/300/300?random&gravity=center",n.innerText="Lorem ipsum dolor sist amet consectetur adipisicing elit. Estinventore assumenda in animi eum cupiditate incidunt, sequi aut libero";for(let e of i)content.appendChild(e)}()}))})();
