@@ -1,3 +1,35 @@
-* {
+body {
   background-color: red;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: white;
+  text-shadow: 1px 1px 2px #2e2e2e;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content p {
+  width: 300px;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  border: 1px solid #2e2e2e;
+  border-radius: 20px;
+  border-bottom-width: 8px;
 }
