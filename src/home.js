@@ -1,23 +1,31 @@
 export const generateHomepage = function () {
-  let restaurantTitle = document.createElement("h1");
-  let restaurantImg = document.createElement("img");
-  let restaurantDesc = document.createElement("p");
+  let home = document.querySelector(".home");
 
-  let x = [restaurantTitle, restaurantImg, restaurantDesc];
+  let createHome = function () {
+    content.innerText = "";
+    let restaurantTitle = document.createElement("h1");
+    let restaurantImg = document.createElement("img");
+    let restaurantDesc = document.createElement("p");
 
-  let container = document.createElement("div");
-  container.classList.add("home-content");
+    let x = [restaurantTitle, restaurantImg, restaurantDesc];
 
-  restaurantTitle.innerText = "My stupid restaurant";
-  restaurantImg.src = "http://unsplash.it/300/300?random&gravity=center";
-  restaurantDesc.innerText =
-    "Lorem ipsum dolor sist amet consectetur adipisicing elit. Estinventore assumenda in animi eum cupiditate incidunt, sequi aut libero";
+    let container = document.createElement("div");
+    container.classList.add("home-content");
 
-  content.appendChild(container);
+    restaurantTitle.innerText = "Restaurant Dva Kota";
+    restaurantImg.classList.add("home-img");
+    restaurantDesc.innerText =
+      "Lorem ipsum dolor sist amet consectetur adipisicing elit. Estinventore assumenda in animi eum cupiditate incidunt, sequi aut libero";
 
-  for (let item of x) {
-    container.appendChild(item);
-  }
+    content.appendChild(container);
+
+    for (let item of x) {
+      container.appendChild(item);
+    }
+  };
+
+  createHome();
+  home.addEventListener("click", createHome);
 };
 
 export const generateNav = () => {
